@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Alphabetical list of products" Category="Table" Bounds="441.02,410,187.893333333333,25" Group="Collapsed" Label="Alphabetical list of products" />
+    <Node Id="Alphabetical list of products_CategoryID" Category="PK" Description="int" Label="CategoryID int" />
+    <Node Id="Alphabetical list of products_CategoryName" Category="PK" Description="nvarchar(15)" Label="CategoryName nvarchar(15)" />
+    <Node Id="Alphabetical list of products_Discontinued" Category="PK" Description="bit" Label="Discontinued bit" />
+    <Node Id="Alphabetical list of products_ProductID" Category="PK" Description="int" Label="ProductID int" />
+    <Node Id="Alphabetical list of products_ProductName" Category="PK" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Alphabetical list of products_QuantityPerUnit" Category="PK" Description="nvarchar(20)" Label="QuantityPerUnit nvarchar(20)" />
+    <Node Id="Alphabetical list of products_ReorderLevel" Category="PK" Description="smallint" Label="ReorderLevel smallint" />
+    <Node Id="Alphabetical list of products_SupplierID" Category="PK" Description="int" Label="SupplierID int" />
+    <Node Id="Alphabetical list of products_UnitPrice" Category="PK" Description="money" Label="UnitPrice money" />
+    <Node Id="Alphabetical list of products_UnitsInStock" Category="PK" Description="smallint" Label="UnitsInStock smallint" />
+    <Node Id="Alphabetical list of products_UnitsOnOrder" Category="PK" Description="smallint" Label="UnitsOnOrder smallint" />
+    <Node Id="Categories" Category="Table" Bounds="159.1,190,96.4266666666667,25" Group="Collapsed" Label="Categories" />
+    <Node Id="Categories_CategoryID" Category="PK" Description="int" Label="CategoryID int" />
+    <Node Id="Categories_CategoryName" Category="NOT NULL" Description="nvarchar(15)" Label="CategoryName nvarchar(15)" />
+    <Node Id="Categories_Description" Category="NULL" Description="ntext" Label="Description ntext" />
+    <Node Id="Categories_Picture" Category="NULL" Description="image" Label="Picture image" />
+    <Node Id="Category Sales for 1997" Category="Table" Bounds="40,410,165.413333333333,25" Group="Collapsed" Label="Category Sales for 1997" />
+    <Node Id="Category Sales for 1997_CategoryName" Category="PK" Description="nvarchar(15)" Label="CategoryName nvarchar(15)" />
+    <Node Id="Category Sales for 1997_CategorySales" Category="PK" Description="money" Label="CategorySales money" />
+    <Node Id="Current Product List" Category="Table" Bounds="756.843333333333,300,145.38,25" Group="Collapsed" Label="Current Product List" />
+    <Node Id="Current Product List_ProductID" Category="PK" Description="int" Label="ProductID int" />
+    <Node Id="Current Product List_ProductName" Category="PK" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Customer and Suppliers by City" Category="Table" Bounds="268.963333333333,465,206.003333333333,25" Group="Collapsed" Label="Customer and Suppliers by City" />
+    <Node Id="Customer and Suppliers by City_City" Category="PK" Description="nvarchar(15)" Label="City nvarchar(15)" />
+    <Node Id="Customer and Suppliers by City_CompanyName" Category="PK" Description="nvarchar(40)" Label="CompanyName nvarchar(40)" />
+    <Node Id="Customer and Suppliers by City_ContactName" Category="PK" Description="nvarchar(30)" Label="ContactName nvarchar(30)" />
+    <Node Id="Customer and Suppliers by City_Relationship" Category="PK" Description="varchar(9)" Label="Relationship varchar(9)" />
+    <Node Id="CustomerCustomerDemo" Category="Table" Bounds="394.088333333333,135,174.45,25" Group="Collapsed" Label="CustomerCustomerDemo" />
+    <Node Id="CustomerCustomerDemo_CustomerID" Category="PK" Description="nchar(5)" Label="CustomerID nchar(5)" />
+    <Node Id="CustomerCustomerDemo_CustomerTypeID" Category="PK" Description="nchar(10)" Label="CustomerTypeID nchar(10)" />
+    <Node Id="CustomerDemographics" Category="Table" Bounds="286.32,190,167.986666666667,25" Group="Collapsed" Label="CustomerDemographics" />
+    <Node Id="CustomerDemographics_CustomerDesc" Category="NULL" Description="ntext" Label="CustomerDesc ntext" />
+    <Node Id="CustomerDemographics_CustomerTypeID" Category="PK" Description="nchar(10)" Label="CustomerTypeID nchar(10)" />
+    <Node Id="Customers" Category="Table" Bounds="485.168333333333,190,96.29,25" Group="Collapsed" Label="Customers" />
+    <Node Id="Customers_Address" Category="NULL" Description="nvarchar(60)" Label="Address nvarchar(60)" />
+    <Node Id="Customers_City" Category="NULL" Description="nvarchar(15)" Label="City nvarchar(15)" />
+    <Node Id="Customers_CompanyName" Category="NOT NULL" Description="nvarchar(40)" Label="CompanyName nvarchar(40)" />
+    <Node Id="Customers_ContactName" Category="NULL" Description="nvarchar(30)" Label="ContactName nvarchar(30)" />
+    <Node Id="Customers_ContactTitle" Category="NULL" Description="nvarchar(30)" Label="ContactTitle nvarchar(30)" />
+    <Node Id="Customers_Country" Category="NULL" Description="nvarchar(15)" Label="Country nvarchar(15)" />
+    <Node Id="Customers_CustomerID" Category="PK" Description="nchar(5)" Label="CustomerID nchar(5)" />
+    <Node Id="Customers_Fax" Category="NULL" Description="nvarchar(24)" Label="Fax nvarchar(24)" />
+    <Node Id="Customers_Phone" Category="NULL" Description="nvarchar(24)" Label="Phone nvarchar(24)" />
+    <Node Id="Customers_PostalCode" Category="NULL" Description="nvarchar(10)" Label="PostalCode nvarchar(10)" />
+    <Node Id="Customers_Region" Category="NULL" Description="nvarchar(15)" Label="Region nvarchar(15)" />
+    <Node Id="Database" Category="Database" Bounds="0,0,988.41,530" Group="Expanded" Label="Northwind" />
+    <Node Id="EmployeeTerritories" Category="Table" Bounds="705.338333333333,135,143.95,25" Group="Collapsed" Label="EmployeeTerritories" />
+    <Node Id="EmployeeTerritories_EmployeeID" Category="PK" Description="int" Label="EmployeeID int" />
+    <Node Id="EmployeeTerritories_TerritoryID" Category="PK" Description="nvarchar(20)" Label="TerritoryID nvarchar(20)" />
+    <Node Id="Employees" Category="Table" Bounds="728.888333333333,190,96.85,25" Group="Collapsed" Label="Employees" />
+    <Node Id="Employees_Address" Category="NULL" Description="nvarchar(60)" Label="Address nvarchar(60)" />
+    <Node Id="Employees_BirthDate" Category="NULL" Description="datetime" Label="BirthDate datetime" />
+    <Node Id="Employees_City" Category="NULL" Description="nvarchar(15)" Label="City nvarchar(15)" />
+    <Node Id="Employees_Country" Category="NULL" Description="nvarchar(15)" Label="Country nvarchar(15)" />
+    <Node Id="Employees_EmployeeID" Category="PK" Description="int" Label="EmployeeID int" />
+    <Node Id="Employees_Extension" Category="NULL" Description="nvarchar(4)" Label="Extension nvarchar(4)" />
+    <Node Id="Employees_FirstName" Category="NOT NULL" Description="nvarchar(10)" Label="FirstName nvarchar(10)" />
+    <Node Id="Employees_HireDate" Category="NULL" Description="datetime" Label="HireDate datetime" />
+    <Node Id="Employees_HomePhone" Category="NULL" Description="nvarchar(24)" Label="HomePhone nvarchar(24)" />
+    <Node Id="Employees_LastName" Category="NOT NULL" Description="nvarchar(20)" Label="LastName nvarchar(20)" />
+    <Node Id="Employees_Notes" Category="NULL" Description="ntext" Label="Notes ntext" />
+    <Node Id="Employees_Photo" Category="NULL" Description="image" Label="Photo image" />
+    <Node Id="Employees_PhotoPath" Category="NULL" Description="nvarchar(255)" Label="PhotoPath nvarchar(255)" />
+    <Node Id="Employees_PostalCode" Category="NULL" Description="nvarchar(10)" Label="PostalCode nvarchar(10)" />
+    <Node Id="Employees_Region" Category="NULL" Description="nvarchar(15)" Label="Region nvarchar(15)" />
+    <Node Id="Employees_ReportsTo" Category="FK" Description="int" Label="ReportsTo int" />
+    <Node Id="Employees_Title" Category="NULL" Description="nvarchar(30)" Label="Title nvarchar(30)" />
+    <Node Id="Employees_TitleOfCourtesy" Category="NULL" Description="nvarchar(25)" Label="TitleOfCourtesy nvarchar(25)" />
+    <Node Id="Invoices" Category="Table" Bounds="40,300,82.58,25" Group="Collapsed" Label="Invoices" />
+    <Node Id="Invoices_Address" Category="PK" Description="nvarchar(60)" Label="Address nvarchar(60)" />
+    <Node Id="Invoices_City" Category="PK" Description="nvarchar(15)" Label="City nvarchar(15)" />
+    <Node Id="Invoices_Country" Category="PK" Description="nvarchar(15)" Label="Country nvarchar(15)" />
+    <Node Id="Invoices_CustomerID" Category="PK" Description="nchar(5)" Label="CustomerID nchar(5)" />
+    <Node Id="Invoices_CustomerName" Category="PK" Description="nvarchar(40)" Label="CustomerName nvarchar(40)" />
+    <Node Id="Invoices_Discount" Category="PK" Description="real" Label="Discount real" />
+    <Node Id="Invoices_ExtendedPrice" Category="PK" Description="money" Label="ExtendedPrice money" />
+    <Node Id="Invoices_Freight" Category="PK" Description="money" Label="Freight money" />
+    <Node Id="Invoices_OrderDate" Category="PK" Description="datetime" Label="OrderDate datetime" />
+    <Node Id="Invoices_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Invoices_PostalCode" Category="PK" Description="nvarchar(10)" Label="PostalCode nvarchar(10)" />
+    <Node Id="Invoices_ProductID" Category="PK" Description="int" Label="ProductID int" />
+    <Node Id="Invoices_ProductName" Category="PK" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Invoices_Quantity" Category="PK" Description="smallint" Label="Quantity smallint" />
+    <Node Id="Invoices_Region" Category="PK" Description="nvarchar(15)" Label="Region nvarchar(15)" />
+    <Node Id="Invoices_RequiredDate" Category="PK" Description="datetime" Label="RequiredDate datetime" />
+    <Node Id="Invoices_Salesperson" Category="PK" Description="nvarchar(31)" Label="Salesperson nvarchar(31)" />
+    <Node Id="Invoices_ShipAddress" Category="PK" Description="nvarchar(60)" Label="ShipAddress nvarchar(60)" />
+    <Node Id="Invoices_ShipCity" Category="PK" Description="nvarchar(15)" Label="ShipCity nvarchar(15)" />
+    <Node Id="Invoices_ShipCountry" Category="PK" Description="nvarchar(15)" Label="ShipCountry nvarchar(15)" />
+    <Node Id="Invoices_ShipName" Category="PK" Description="nvarchar(40)" Label="ShipName nvarchar(40)" />
+    <Node Id="Invoices_ShipPostalCode" Category="PK" Description="nvarchar(10)" Label="ShipPostalCode nvarchar(10)" />
+    <Node Id="Invoices_ShipRegion" Category="PK" Description="nvarchar(15)" Label="ShipRegion nvarchar(15)" />
+    <Node Id="Invoices_ShippedDate" Category="PK" Description="datetime" Label="ShippedDate datetime" />
+    <Node Id="Invoices_ShipperName" Category="PK" Description="nvarchar(40)" Label="ShipperName nvarchar(40)" />
+    <Node Id="Invoices_UnitPrice" Category="PK" Description="money" Label="UnitPrice money" />
+    <Node Id="Order Details" Category="Table" Bounds="582.416666666667,80,109.793333333333,25" Group="Collapsed" Label="Order Details" />
+    <Node Id="Order Details Extended" Category="Table" Bounds="412.72,355,162.2,25" Group="Collapsed" Label="Order Details Extended" />
+    <Node Id="Order Details Extended_Discount" Category="PK" Description="real" Label="Discount real" />
+    <Node Id="Order Details Extended_ExtendedPrice" Category="PK" Description="money" Label="ExtendedPrice money" />
+    <Node Id="Order Details Extended_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Order Details Extended_ProductID" Category="PK" Description="int" Label="ProductID int" />
+    <Node Id="Order Details Extended_ProductName" Category="PK" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Order Details Extended_Quantity" Category="PK" Description="smallint" Label="Quantity smallint" />
+    <Node Id="Order Details Extended_UnitPrice" Category="PK" Description="money" Label="UnitPrice money" />
+    <Node Id="Order Details_Discount" Category="NOT NULL" Description="real" Label="Discount real" />
+    <Node Id="Order Details_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Order Details_ProductID" Category="PK" Description="int" Label="ProductID int" />
+    <Node Id="Order Details_Quantity" Category="NOT NULL" Description="smallint" Label="Quantity smallint" />
+    <Node Id="Order Details_UnitPrice" Category="NOT NULL" Description="money" Label="UnitPrice money" />
+    <Node Id="Order Subtotals" Category="Table" Bounds="280.723333333333,300,123.51,25" Group="Collapsed" Label="Order Subtotals" />
+    <Node Id="Order Subtotals_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Order Subtotals_Subtotal" Category="PK" Description="money" Label="Subtotal money" />
+    <Node Id="Orders" Category="Table" Bounds="599.398333333333,135,75.83,25" Group="Collapsed" Label="Orders" />
+    <Node Id="Orders Qry" Category="Table" Bounds="152.58,300,98.1433333333333,25" Group="Collapsed" Label="Orders Qry" />
+    <Node Id="Orders Qry_Address" Category="PK" Description="nvarchar(60)" Label="Address nvarchar(60)" />
+    <Node Id="Orders Qry_City" Category="PK" Description="nvarchar(15)" Label="City nvarchar(15)" />
+    <Node Id="Orders Qry_CompanyName" Category="PK" Description="nvarchar(40)" Label="CompanyName nvarchar(40)" />
+    <Node Id="Orders Qry_Country" Category="PK" Description="nvarchar(15)" Label="Country nvarchar(15)" />
+    <Node Id="Orders Qry_CustomerID" Category="PK" Description="nchar(5)" Label="CustomerID nchar(5)" />
+    <Node Id="Orders Qry_EmployeeID" Category="PK" Description="int" Label="EmployeeID int" />
+    <Node Id="Orders Qry_Freight" Category="PK" Description="money" Label="Freight money" />
+    <Node Id="Orders Qry_OrderDate" Category="PK" Description="datetime" Label="OrderDate datetime" />
+    <Node Id="Orders Qry_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Orders Qry_PostalCode" Category="PK" Description="nvarchar(10)" Label="PostalCode nvarchar(10)" />
+    <Node Id="Orders Qry_Region" Category="PK" Description="nvarchar(15)" Label="Region nvarchar(15)" />
+    <Node Id="Orders Qry_RequiredDate" Category="PK" Description="datetime" Label="RequiredDate datetime" />
+    <Node Id="Orders Qry_ShipAddress" Category="PK" Description="nvarchar(60)" Label="ShipAddress nvarchar(60)" />
+    <Node Id="Orders Qry_ShipCity" Category="PK" Description="nvarchar(15)" Label="ShipCity nvarchar(15)" />
+    <Node Id="Orders Qry_ShipCountry" Category="PK" Description="nvarchar(15)" Label="ShipCountry nvarchar(15)" />
+    <Node Id="Orders Qry_ShipName" Category="PK" Description="nvarchar(40)" Label="ShipName nvarchar(40)" />
+    <Node Id="Orders Qry_ShipPostalCode" Category="PK" Description="nvarchar(10)" Label="ShipPostalCode nvarchar(10)" />
+    <Node Id="Orders Qry_ShipRegion" Category="PK" Description="nvarchar(15)" Label="ShipRegion nvarchar(15)" />
+    <Node Id="Orders Qry_ShipVia" Category="PK" Description="int" Label="ShipVia int" />
+    <Node Id="Orders Qry_ShippedDate" Category="PK" Description="datetime" Label="ShippedDate datetime" />
+    <Node Id="Orders_CustomerID" Category="FK" Description="nchar(5)" Label="CustomerID nchar(5)" />
+    <Node Id="Orders_EmployeeID" Category="FK" Description="int" Label="EmployeeID int" />
+    <Node Id="Orders_Freight" Category="NULL" Description="money" Label="Freight money" />
+    <Node Id="Orders_OrderDate" Category="NULL" Description="datetime" Label="OrderDate datetime" />
+    <Node Id="Orders_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Orders_RequiredDate" Category="NULL" Description="datetime" Label="RequiredDate datetime" />
+    <Node Id="Orders_ShipAddress" Category="NULL" Description="nvarchar(60)" Label="ShipAddress nvarchar(60)" />
+    <Node Id="Orders_ShipCity" Category="NULL" Description="nvarchar(15)" Label="ShipCity nvarchar(15)" />
+    <Node Id="Orders_ShipCountry" Category="NULL" Description="nvarchar(15)" Label="ShipCountry nvarchar(15)" />
+    <Node Id="Orders_ShipName" Category="NULL" Description="nvarchar(40)" Label="ShipName nvarchar(40)" />
+    <Node Id="Orders_ShipPostalCode" Category="NULL" Description="nvarchar(10)" Label="ShipPostalCode nvarchar(10)" />
+    <Node Id="Orders_ShipRegion" Category="NULL" Description="nvarchar(15)" Label="ShipRegion nvarchar(15)" />
+    <Node Id="Orders_ShipVia" Category="FK" Description="int" Label="ShipVia int" />
+    <Node Id="Orders_ShippedDate" Category="NULL" Description="datetime" Label="ShippedDate datetime" />
+    <Node Id="Product Sales for 1997" Category="Table" Bounds="223.873333333333,355,158.846666666667,25" Group="Collapsed" Label="Product Sales for 1997" />
+    <Node Id="Product Sales for 1997_CategoryName" Category="PK" Description="nvarchar(15)" Label="CategoryName nvarchar(15)" />
+    <Node Id="Product Sales for 1997_ProductName" Category="PK" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Product Sales for 1997_ProductSales" Category="PK" Description="money" Label="ProductSales money" />
+    <Node Id="Products" Category="Table" Bounds="164.071666666666,135,86.4833333333333,25" Group="Collapsed" Label="Products" />
+    <Node Id="Products Above Average Price" Category="Table" Bounds="40,465,198.963333333333,25" Group="Collapsed" Label="Products Above Average Price" />
+    <Node Id="Products Above Average Price_ProductName" Category="PK" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Products Above Average Price_UnitPrice" Category="PK" Description="money" Label="UnitPrice money" />
+    <Node Id="Products by Category" Category="Table" Bounds="40,355,153.873333333333,25" Group="Collapsed" Label="Products by Category" />
+    <Node Id="Products by Category_CategoryName" Category="PK" Description="nvarchar(15)" Label="CategoryName nvarchar(15)" />
+    <Node Id="Products by Category_Discontinued" Category="PK" Description="bit" Label="Discontinued bit" />
+    <Node Id="Products by Category_ProductName" Category="PK" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Products by Category_QuantityPerUnit" Category="PK" Description="nvarchar(20)" Label="QuantityPerUnit nvarchar(20)" />
+    <Node Id="Products by Category_UnitsInStock" Category="PK" Description="smallint" Label="UnitsInStock smallint" />
+    <Node Id="Products_CategoryID" Category="FK" Description="int" Label="CategoryID int" />
+    <Node Id="Products_Discontinued" Category="NOT NULL" Description="bit" Label="Discontinued bit" />
+    <Node Id="Products_ProductID" Category="PK" Description="int" Label="ProductID int" />
+    <Node Id="Products_ProductName" Category="NOT NULL" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Products_QuantityPerUnit" Category="NULL" Description="nvarchar(20)" Label="QuantityPerUnit nvarchar(20)" />
+    <Node Id="Products_ReorderLevel" Category="NULL" Description="smallint" Label="ReorderLevel smallint" />
+    <Node Id="Products_SupplierID" Category="FK" Description="int" Label="SupplierID int" />
+    <Node Id="Products_UnitPrice" Category="NULL" Description="money" Label="UnitPrice money" />
+    <Node Id="Products_UnitsInStock" Category="NULL" Description="smallint" Label="UnitsInStock smallint" />
+    <Node Id="Products_UnitsOnOrder" Category="NULL" Description="smallint" Label="UnitsOnOrder smallint" />
+    <Node Id="Quarterly Orders" Category="Table" Bounds="434.233333333333,300,128.463333333333,25" Group="Collapsed" Label="Quarterly Orders" />
+    <Node Id="Quarterly Orders_City" Category="PK" Description="nvarchar(15)" Label="City nvarchar(15)" />
+    <Node Id="Quarterly Orders_CompanyName" Category="PK" Description="nvarchar(40)" Label="CompanyName nvarchar(40)" />
+    <Node Id="Quarterly Orders_Country" Category="PK" Description="nvarchar(15)" Label="Country nvarchar(15)" />
+    <Node Id="Quarterly Orders_CustomerID" Category="PK" Description="nchar(5)" Label="CustomerID nchar(5)" />
+    <Node Id="Region" Category="Table" Bounds="863.865,245,76.8966666666666,25" Group="Collapsed" Label="Region" />
+    <Node Id="Region_RegionDescription" Category="NOT NULL" Description="nchar(50)" Label="RegionDescription nchar(50)" />
+    <Node Id="Region_RegionID" Category="PK" Description="int" Label="RegionID int" />
+    <Node Id="Sales Totals by Amount" Category="Table" Bounds="604.92,355,162.55,25" Group="Collapsed" Label="Sales Totals by Amount" />
+    <Node Id="Sales Totals by Amount_CompanyName" Category="PK" Description="nvarchar(40)" Label="CompanyName nvarchar(40)" />
+    <Node Id="Sales Totals by Amount_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Sales Totals by Amount_SaleAmount" Category="PK" Description="money" Label="SaleAmount money" />
+    <Node Id="Sales Totals by Amount_ShippedDate" Category="PK" Description="datetime" Label="ShippedDate datetime" />
+    <Node Id="Sales by Category" Category="Table" Bounds="592.696666666667,300,134.146666666667,25" Group="Collapsed" Label="Sales by Category" />
+    <Node Id="Sales by Category_CategoryID" Category="PK" Description="int" Label="CategoryID int" />
+    <Node Id="Sales by Category_CategoryName" Category="PK" Description="nvarchar(15)" Label="CategoryName nvarchar(15)" />
+    <Node Id="Sales by Category_ProductName" Category="PK" Description="nvarchar(40)" Label="ProductName nvarchar(40)" />
+    <Node Id="Sales by Category_ProductSales" Category="PK" Description="money" Label="ProductSales money" />
+    <Node Id="Shippers" Category="Table" Bounds="612.453333333333,190,85.72,25" Group="Collapsed" Label="Shippers" />
+    <Node Id="Shippers_CompanyName" Category="NOT NULL" Description="nvarchar(40)" Label="CompanyName nvarchar(40)" />
+    <Node Id="Shippers_Phone" Category="NULL" Description="nvarchar(24)" Label="Phone nvarchar(24)" />
+    <Node Id="Shippers_ShipperID" Category="PK" Description="int" Label="ShipperID int" />
+    <Node Id="Summary of Sales by Quarter" Category="Table" Bounds="658.913333333333,410,194.106666666667,25" Group="Collapsed" Label="Summary of Sales by Quarter" />
+    <Node Id="Summary of Sales by Quarter_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Summary of Sales by Quarter_ShippedDate" Category="PK" Description="datetime" Label="ShippedDate datetime" />
+    <Node Id="Summary of Sales by Quarter_Subtotal" Category="PK" Description="money" Label="Subtotal money" />
+    <Node Id="Summary of Sales by Year" Category="Table" Bounds="235.413333333333,410,175.606666666667,25" Group="Collapsed" Label="Summary of Sales by Year" />
+    <Node Id="Summary of Sales by Year_OrderID" Category="PK" Description="int" Label="OrderID int" />
+    <Node Id="Summary of Sales by Year_ShippedDate" Category="PK" Description="datetime" Label="ShippedDate datetime" />
+    <Node Id="Summary of Sales by Year_Subtotal" Category="PK" Description="money" Label="Subtotal money" />
+    <Node Id="Suppliers" Category="Table" Bounds="40,190,88.6266666666667,25" Group="Collapsed" Label="Suppliers" />
+    <Node Id="Suppliers_Address" Category="NULL" Description="nvarchar(60)" Label="Address nvarchar(60)" />
+    <Node Id="Suppliers_City" Category="NULL" Description="nvarchar(15)" Label="City nvarchar(15)" />
+    <Node Id="Suppliers_CompanyName" Category="NOT NULL" Description="nvarchar(40)" Label="CompanyName nvarchar(40)" />
+    <Node Id="Suppliers_ContactName" Category="NULL" Description="nvarchar(30)" Label="ContactName nvarchar(30)" />
+    <Node Id="Suppliers_ContactTitle" Category="NULL" Description="nvarchar(30)" Label="ContactTitle nvarchar(30)" />
+    <Node Id="Suppliers_Country" Category="NULL" Description="nvarchar(15)" Label="Country nvarchar(15)" />
+    <Node Id="Suppliers_Fax" Category="NULL" Description="nvarchar(24)" Label="Fax nvarchar(24)" />
+    <Node Id="Suppliers_HomePage" Category="NULL" Description="ntext" Label="HomePage ntext" />
+    <Node Id="Suppliers_Phone" Category="NULL" Description="nvarchar(24)" Label="Phone nvarchar(24)" />
+    <Node Id="Suppliers_PostalCode" Category="NULL" Description="nvarchar(10)" Label="PostalCode nvarchar(10)" />
+    <Node Id="Suppliers_Region" Category="NULL" Description="nvarchar(15)" Label="Region nvarchar(15)" />
+    <Node Id="Suppliers_SupplierID" Category="PK" Description="int" Label="SupplierID int" />
+    <Node Id="Territories" Category="Table" Bounds="856.216666666667,190,92.1933333333333,25" Group="Collapsed" Label="Territories" />
+    <Node Id="Territories_RegionID" Category="FK" Description="int" Label="RegionID int" />
+    <Node Id="Territories_TerritoryDescription" Category="NOT NULL" Description="nchar(50)" Label="TerritoryDescription nchar(50)" />
+    <Node Id="Territories_TerritoryID" Category="PK" Description="nvarchar(20)" Label="TerritoryID nvarchar(20)" />
+    <Node Id="dbo" Category="Schema" Bounds="20,40,948.41,470" Group="Expanded" Label="dbo" />
+  </Nodes>
+  <Links>
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_CategoryID" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_CategoryName" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_Discontinued" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_ProductID" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_ProductName" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_QuantityPerUnit" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_ReorderLevel" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_SupplierID" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_UnitPrice" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_UnitsInStock" Category="Contains" />
+    <Link Source="Alphabetical list of products" Target="Alphabetical list of products_UnitsOnOrder" Category="Contains" />
+    <Link Source="Categories" Target="Categories_CategoryID" Category="Contains" />
+    <Link Source="Categories" Target="Categories_CategoryName" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Description" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Picture" Category="Contains" />
+    <Link Source="Category Sales for 1997" Target="Category Sales for 1997_CategoryName" Category="Contains" />
+    <Link Source="Category Sales for 1997" Target="Category Sales for 1997_CategorySales" Category="Contains" />
+    <Link Source="Current Product List" Target="Current Product List_ProductID" Category="Contains" />
+    <Link Source="Current Product List" Target="Current Product List_ProductName" Category="Contains" />
+    <Link Source="Customer and Suppliers by City" Target="Customer and Suppliers by City_City" Category="Contains" />
+    <Link Source="Customer and Suppliers by City" Target="Customer and Suppliers by City_CompanyName" Category="Contains" />
+    <Link Source="Customer and Suppliers by City" Target="Customer and Suppliers by City_ContactName" Category="Contains" />
+    <Link Source="Customer and Suppliers by City" Target="Customer and Suppliers by City_Relationship" Category="Contains" />
+    <Link Source="CustomerCustomerDemo" Target="CustomerCustomerDemo_CustomerID" Category="Contains" />
+    <Link Source="CustomerCustomerDemo" Target="CustomerCustomerDemo_CustomerTypeID" Category="Contains" />
+    <Link Source="CustomerCustomerDemo_CustomerID" Target="Customers_CustomerID" Category="Foreign Key" Label="FK_CustomerCustomerDemo_Customers" />
+    <Link Source="CustomerCustomerDemo_CustomerTypeID" Target="CustomerDemographics_CustomerTypeID" Category="Foreign Key" Label="FK_CustomerCustomerDemo" />
+    <Link Source="CustomerDemographics" Target="CustomerDemographics_CustomerDesc" Category="Contains" />
+    <Link Source="CustomerDemographics" Target="CustomerDemographics_CustomerTypeID" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Address" Category="Contains" />
+    <Link Source="Customers" Target="Customers_City" Category="Contains" />
+    <Link Source="Customers" Target="Customers_CompanyName" Category="Contains" />
+    <Link Source="Customers" Target="Customers_ContactName" Category="Contains" />
+    <Link Source="Customers" Target="Customers_ContactTitle" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Country" Category="Contains" />
+    <Link Source="Customers" Target="Customers_CustomerID" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Fax" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Phone" Category="Contains" />
+    <Link Source="Customers" Target="Customers_PostalCode" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Region" Category="Contains" />
+    <Link Source="Database" Target="dbo" Category="Contains" />
+    <Link Source="EmployeeTerritories" Target="EmployeeTerritories_EmployeeID" Category="Contains" />
+    <Link Source="EmployeeTerritories" Target="EmployeeTerritories_TerritoryID" Category="Contains" />
+    <Link Source="EmployeeTerritories_EmployeeID" Target="Employees_EmployeeID" Category="Foreign Key" Label="FK_EmployeeTerritories_Employees" />
+    <Link Source="EmployeeTerritories_TerritoryID" Target="Territories_TerritoryID" Category="Foreign Key" Label="FK_EmployeeTerritories_Territories" />
+    <Link Source="Employees" Target="Employees_Address" Category="Contains" />
+    <Link Source="Employees" Target="Employees_BirthDate" Category="Contains" />
+    <Link Source="Employees" Target="Employees_City" Category="Contains" />
+    <Link Source="Employees" Target="Employees_Country" Category="Contains" />
+    <Link Source="Employees" Target="Employees_EmployeeID" Category="Contains" />
+    <Link Source="Employees" Target="Employees_Extension" Category="Contains" />
+    <Link Source="Employees" Target="Employees_FirstName" Category="Contains" />
+    <Link Source="Employees" Target="Employees_HireDate" Category="Contains" />
+    <Link Source="Employees" Target="Employees_HomePhone" Category="Contains" />
+    <Link Source="Employees" Target="Employees_LastName" Category="Contains" />
+    <Link Source="Employees" Target="Employees_Notes" Category="Contains" />
+    <Link Source="Employees" Target="Employees_Photo" Category="Contains" />
+    <Link Source="Employees" Target="Employees_PhotoPath" Category="Contains" />
+    <Link Source="Employees" Target="Employees_PostalCode" Category="Contains" />
+    <Link Source="Employees" Target="Employees_Region" Category="Contains" />
+    <Link Source="Employees" Target="Employees_ReportsTo" Category="Contains" />
+    <Link Source="Employees" Target="Employees_Title" Category="Contains" />
+    <Link Source="Employees" Target="Employees_TitleOfCourtesy" Category="Contains" />
+    <Link Source="Employees_ReportsTo" Target="Employees_EmployeeID" Category="Foreign Key" Label="FK_Employees_Employees" />
+    <Link Source="Invoices" Target="Invoices_Address" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_City" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_Country" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_CustomerID" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_CustomerName" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_Discount" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ExtendedPrice" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_Freight" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_OrderDate" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_OrderID" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_PostalCode" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ProductID" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ProductName" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_Quantity" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_Region" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_RequiredDate" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_Salesperson" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ShipAddress" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ShipCity" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ShipCountry" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ShipName" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ShipPostalCode" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ShipRegion" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ShippedDate" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_ShipperName" Category="Contains" />
+    <Link Source="Invoices" Target="Invoices_UnitPrice" Category="Contains" />
+    <Link Source="Order Details" Target="Order Details_Discount" Category="Contains" />
+    <Link Source="Order Details" Target="Order Details_OrderID" Category="Contains" />
+    <Link Source="Order Details" Target="Order Details_ProductID" Category="Contains" />
+    <Link Source="Order Details" Target="Order Details_Quantity" Category="Contains" />
+    <Link Source="Order Details" Target="Order Details_UnitPrice" Category="Contains" />
+    <Link Source="Order Details Extended" Target="Order Details Extended_Discount" Category="Contains" />
+    <Link Source="Order Details Extended" Target="Order Details Extended_ExtendedPrice" Category="Contains" />
+    <Link Source="Order Details Extended" Target="Order Details Extended_OrderID" Category="Contains" />
+    <Link Source="Order Details Extended" Target="Order Details Extended_ProductID" Category="Contains" />
+    <Link Source="Order Details Extended" Target="Order Details Extended_ProductName" Category="Contains" />
+    <Link Source="Order Details Extended" Target="Order Details Extended_Quantity" Category="Contains" />
+    <Link Source="Order Details Extended" Target="Order Details Extended_UnitPrice" Category="Contains" />
+    <Link Source="Order Details_OrderID" Target="Orders_OrderID" Category="Foreign Key" Label="FK_Order_Details_Orders" />
+    <Link Source="Order Details_ProductID" Target="Products_ProductID" Category="Foreign Key" Label="FK_Order_Details_Products" />
+    <Link Source="Order Subtotals" Target="Order Subtotals_OrderID" Category="Contains" />
+    <Link Source="Order Subtotals" Target="Order Subtotals_Subtotal" Category="Contains" />
+    <Link Source="Orders" Target="Orders_CustomerID" Category="Contains" />
+    <Link Source="Orders" Target="Orders_EmployeeID" Category="Contains" />
+    <Link Source="Orders" Target="Orders_Freight" Category="Contains" />
+    <Link Source="Orders" Target="Orders_OrderDate" Category="Contains" />
+    <Link Source="Orders" Target="Orders_OrderID" Category="Contains" />
+    <Link Source="Orders" Target="Orders_RequiredDate" Category="Contains" />
+    <Link Source="Orders" Target="Orders_ShipAddress" Category="Contains" />
+    <Link Source="Orders" Target="Orders_ShipCity" Category="Contains" />
+    <Link Source="Orders" Target="Orders_ShipCountry" Category="Contains" />
+    <Link Source="Orders" Target="Orders_ShipName" Category="Contains" />
+    <Link Source="Orders" Target="Orders_ShipPostalCode" Category="Contains" />
+    <Link Source="Orders" Target="Orders_ShipRegion" Category="Contains" />
+    <Link Source="Orders" Target="Orders_ShipVia" Category="Contains" />
+    <Link Source="Orders" Target="Orders_ShippedDate" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_Address" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_City" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_CompanyName" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_Country" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_CustomerID" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_EmployeeID" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_Freight" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_OrderDate" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_OrderID" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_PostalCode" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_Region" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_RequiredDate" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_ShipAddress" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_ShipCity" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_ShipCountry" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_ShipName" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_ShipPostalCode" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_ShipRegion" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_ShipVia" Category="Contains" />
+    <Link Source="Orders Qry" Target="Orders Qry_ShippedDate" Category="Contains" />
+    <Link Source="Orders_CustomerID" Target="Customers_CustomerID" Category="Foreign Key" Label="FK_Orders_Customers" />
+    <Link Source="Orders_EmployeeID" Target="Employees_EmployeeID" Category="Foreign Key" Label="FK_Orders_Employees" />
+    <Link Source="Orders_ShipVia" Target="Shippers_ShipperID" Category="Foreign Key" Label="FK_Orders_Shippers" />
+    <Link Source="Product Sales for 1997" Target="Product Sales for 1997_CategoryName" Category="Contains" />
+    <Link Source="Product Sales for 1997" Target="Product Sales for 1997_ProductName" Category="Contains" />
+    <Link Source="Product Sales for 1997" Target="Product Sales for 1997_ProductSales" Category="Contains" />
+    <Link Source="Products" Target="Products_CategoryID" Category="Contains" />
+    <Link Source="Products" Target="Products_Discontinued" Category="Contains" />
+    <Link Source="Products" Target="Products_ProductID" Category="Contains" />
+    <Link Source="Products" Target="Products_ProductName" Category="Contains" />
+    <Link Source="Products" Target="Products_QuantityPerUnit" Category="Contains" />
+    <Link Source="Products" Target="Products_ReorderLevel" Category="Contains" />
+    <Link Source="Products" Target="Products_SupplierID" Category="Contains" />
+    <Link Source="Products" Target="Products_UnitPrice" Category="Contains" />
+    <Link Source="Products" Target="Products_UnitsInStock" Category="Contains" />
+    <Link Source="Products" Target="Products_UnitsOnOrder" Category="Contains" />
+    <Link Source="Products Above Average Price" Target="Products Above Average Price_ProductName" Category="Contains" />
+    <Link Source="Products Above Average Price" Target="Products Above Average Price_UnitPrice" Category="Contains" />
+    <Link Source="Products by Category" Target="Products by Category_CategoryName" Category="Contains" />
+    <Link Source="Products by Category" Target="Products by Category_Discontinued" Category="Contains" />
+    <Link Source="Products by Category" Target="Products by Category_ProductName" Category="Contains" />
+    <Link Source="Products by Category" Target="Products by Category_QuantityPerUnit" Category="Contains" />
+    <Link Source="Products by Category" Target="Products by Category_UnitsInStock" Category="Contains" />
+    <Link Source="Products_CategoryID" Target="Categories_CategoryID" Category="Foreign Key" Label="FK_Products_Categories" />
+    <Link Source="Products_SupplierID" Target="Suppliers_SupplierID" Category="Foreign Key" Label="FK_Products_Suppliers" />
+    <Link Source="Quarterly Orders" Target="Quarterly Orders_City" Category="Contains" />
+    <Link Source="Quarterly Orders" Target="Quarterly Orders_CompanyName" Category="Contains" />
+    <Link Source="Quarterly Orders" Target="Quarterly Orders_Country" Category="Contains" />
+    <Link Source="Quarterly Orders" Target="Quarterly Orders_CustomerID" Category="Contains" />
+    <Link Source="Region" Target="Region_RegionDescription" Category="Contains" />
+    <Link Source="Region" Target="Region_RegionID" Category="Contains" />
+    <Link Source="Sales Totals by Amount" Target="Sales Totals by Amount_CompanyName" Category="Contains" />
+    <Link Source="Sales Totals by Amount" Target="Sales Totals by Amount_OrderID" Category="Contains" />
+    <Link Source="Sales Totals by Amount" Target="Sales Totals by Amount_SaleAmount" Category="Contains" />
+    <Link Source="Sales Totals by Amount" Target="Sales Totals by Amount_ShippedDate" Category="Contains" />
+    <Link Source="Sales by Category" Target="Sales by Category_CategoryID" Category="Contains" />
+    <Link Source="Sales by Category" Target="Sales by Category_CategoryName" Category="Contains" />
+    <Link Source="Sales by Category" Target="Sales by Category_ProductName" Category="Contains" />
+    <Link Source="Sales by Category" Target="Sales by Category_ProductSales" Category="Contains" />
+    <Link Source="Shippers" Target="Shippers_CompanyName" Category="Contains" />
+    <Link Source="Shippers" Target="Shippers_Phone" Category="Contains" />
+    <Link Source="Shippers" Target="Shippers_ShipperID" Category="Contains" />
+    <Link Source="Summary of Sales by Quarter" Target="Summary of Sales by Quarter_OrderID" Category="Contains" />
+    <Link Source="Summary of Sales by Quarter" Target="Summary of Sales by Quarter_ShippedDate" Category="Contains" />
+    <Link Source="Summary of Sales by Quarter" Target="Summary of Sales by Quarter_Subtotal" Category="Contains" />
+    <Link Source="Summary of Sales by Year" Target="Summary of Sales by Year_OrderID" Category="Contains" />
+    <Link Source="Summary of Sales by Year" Target="Summary of Sales by Year_ShippedDate" Category="Contains" />
+    <Link Source="Summary of Sales by Year" Target="Summary of Sales by Year_Subtotal" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_Address" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_City" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_CompanyName" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_ContactName" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_ContactTitle" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_Country" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_Fax" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_HomePage" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_Phone" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_PostalCode" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_Region" Category="Contains" />
+    <Link Source="Suppliers" Target="Suppliers_SupplierID" Category="Contains" />
+    <Link Source="Territories" Target="Territories_RegionID" Category="Contains" />
+    <Link Source="Territories" Target="Territories_TerritoryDescription" Category="Contains" />
+    <Link Source="Territories" Target="Territories_TerritoryID" Category="Contains" />
+    <Link Source="Territories_RegionID" Target="Region_RegionID" Category="Foreign Key" Label="FK_Territories_Region" />
+    <Link Source="dbo" Target="Alphabetical list of products" Category="Contains" />
+    <Link Source="dbo" Target="Categories" Category="Contains" />
+    <Link Source="dbo" Target="Category Sales for 1997" Category="Contains" />
+    <Link Source="dbo" Target="Current Product List" Category="Contains" />
+    <Link Source="dbo" Target="Customer and Suppliers by City" Category="Contains" />
+    <Link Source="dbo" Target="CustomerCustomerDemo" Category="Contains" />
+    <Link Source="dbo" Target="CustomerDemographics" Category="Contains" />
+    <Link Source="dbo" Target="Customers" Category="Contains" />
+    <Link Source="dbo" Target="EmployeeTerritories" Category="Contains" />
+    <Link Source="dbo" Target="Employees" Category="Contains" />
+    <Link Source="dbo" Target="Invoices" Category="Contains" />
+    <Link Source="dbo" Target="Order Details" Category="Contains" />
+    <Link Source="dbo" Target="Order Details Extended" Category="Contains" />
+    <Link Source="dbo" Target="Order Subtotals" Category="Contains" />
+    <Link Source="dbo" Target="Orders" Category="Contains" />
+    <Link Source="dbo" Target="Orders Qry" Category="Contains" />
+    <Link Source="dbo" Target="Product Sales for 1997" Category="Contains" />
+    <Link Source="dbo" Target="Products" Category="Contains" />
+    <Link Source="dbo" Target="Products Above Average Price" Category="Contains" />
+    <Link Source="dbo" Target="Products by Category" Category="Contains" />
+    <Link Source="dbo" Target="Quarterly Orders" Category="Contains" />
+    <Link Source="dbo" Target="Region" Category="Contains" />
+    <Link Source="dbo" Target="Sales Totals by Amount" Category="Contains" />
+    <Link Source="dbo" Target="Sales by Category" Category="Contains" />
+    <Link Source="dbo" Target="Shippers" Category="Contains" />
+    <Link Source="dbo" Target="Summary of Sales by Quarter" Category="Contains" />
+    <Link Source="dbo" Target="Summary of Sales by Year" Category="Contains" />
+    <Link Source="dbo" Target="Suppliers" Category="Contains" />
+    <Link Source="dbo" Target="Territories" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="Database" />
+    <Category Id="FK" />
+    <Category Id="Foreign Key" />
+    <Category Id="NOT NULL" />
+    <Category Id="NULL" />
+    <Category Id="PK" />
+    <Category Id="Schema" />
+    <Category Id="Table" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Description" Label="Description" Description="Description" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Table" ValueLabel="True">
+      <Condition Expression="HasCategory('Table')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Schema" ValueLabel="True">
+      <Condition Expression="HasCategory('Schema')" />
+      <Setter Property="Background" Value="#FF7F9169" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="PK" ValueLabel="True">
+      <Condition Expression="HasCategory('PK')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="NULL" ValueLabel="True">
+      <Condition Expression="HasCategory('NULL')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="FK" ValueLabel="True">
+      <Condition Expression="HasCategory('FK')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="NOT NULL" ValueLabel="True">
+      <Condition Expression="HasCategory('NOT NULL')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Database" ValueLabel="True">
+      <Condition Expression="HasCategory('Database')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>
