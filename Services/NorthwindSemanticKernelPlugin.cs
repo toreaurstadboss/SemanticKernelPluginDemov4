@@ -9,20 +9,21 @@ namespace SemanticKernelPluginDemov4.Services
 
     public class NorthwindSemanticKernelPlugin
     {
-        private NorthwindContext _dbContext;
+        private readonly IDbContextFactory<NorthwindContext> _northwindContext;
 
-        public NorthwindSemanticKernelPlugin()
+        public NorthwindSemanticKernelPlugin(IDbContextFactory<NorthwindContext> northwindContext)
         {
-            
+            _northwindContext = northwindContext;
         }
 
         [KernelFunction]
-        [Description("When asked about the suppliers of Nortwind database, use this method to get all the suppliers. It will be returned as a list. Output the items in the list line by line")]
+        [Description("When asked about the suppliers of Nortwind database, use this method to get all the suppliers. Inform that the data comes from the Semantic Kernel plugin called : NortwindSemanticKernelPlugin")]
         public async Task<List<string>> GetSuppliers()
         {
-            return new List<string>();
-
-            //return await _dbContext.Suppliers.Select(s => s.CompanyName).ToListAsync();
+            using (var dbContext = _northwindContext.CreateDbContext())
+            {
+                return await dbContext.Suppliers.OrderBy(s => s.CompanyName).Select(s => "Kernel method 'NorthwindSemanticKernelPlugin:GetSuppliers' gave this: " + s.CompanyName).ToListAsync();
+            }
         }
 
     }

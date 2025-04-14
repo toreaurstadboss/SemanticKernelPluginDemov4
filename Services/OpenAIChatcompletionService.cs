@@ -14,13 +14,13 @@ namespace SemanticKernelPluginDemov4.Services
 
         private IChatCompletionService _chatCompletionService;
 
-        public OpenAIChatcompletionService(Kernel kernel, DbContextOptions<NorthwindContext> dbContextOptions)
+        public OpenAIChatcompletionService(Kernel kernel, DbContextOptions<NorthwindContext> dbContextOptions, NorthwindSemanticKernelPlugin northwindSemanticKernelPlugin)
         {
             _kernel = kernel;
             _dbContextOptions = dbContextOptions;
             _chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 
-            _kernel.ImportPluginFromType<NorthwindSemanticKernelPlugin>();
+            _kernel.ImportPluginFromObject(northwindSemanticKernelPlugin);
         }
 
         public async IAsyncEnumerable<string?> RunQuery(string question)

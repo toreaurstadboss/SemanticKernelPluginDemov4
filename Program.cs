@@ -19,8 +19,8 @@ namespace SemanticKernelPluginDemov4
             builder.Services.AddServerSideBlazor();
 
             // Add DbContext
-            builder.Services.AddDbContext<NorthwindContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Scoped);
+            builder.Services.AddDbContextFactory<NorthwindContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddScoped<IOpenAIChatcompletionService, OpenAIChatcompletionService>();
 
