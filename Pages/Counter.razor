@@ -1,21 +1,46 @@
 ﻿@page "/counter"
+@using Microsoft.SemanticKernel
+@using SemanticKernelPluginDemov4.Services
+
+@inject IOpenAIChatcompletionService OpenAIChatcompletionService
 
 <PageTitle>Northwind</PageTitle>
-
-@inject NorthwindContext NorwindDbContext
-
-<PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
 
+<InputTextArea placeholder="Enter your question about Northwind sales" @bind-Value="Question">
+
+</InputTextArea>
+
+<button class="btn btn-outline-success" @onclick="RunQuery">Submit</button>
+
+
+<pre>
+@Answer
+</pre>
 
 
 
-<ul>
+
+@* <ul>
     @foreach (var product in NorwindDbContext.Products.ToList())
     {
         <li> Produkt - pris @product.ProductName - @product.UnitPrice</li>
     }
-</ul>
+</ul> *@
+
+
+
+
+<style>
+
+    pre {
+        background-color: black;
+        color: greenyellow;
+        font-size:14pt;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+</style>
