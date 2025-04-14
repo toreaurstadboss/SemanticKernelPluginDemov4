@@ -1,8 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.SemanticKernel;
+﻿using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
-using SemanticKernelPluginDemov4.Models;
 
 namespace SemanticKernelPluginDemov4.Services
 {
@@ -10,17 +8,13 @@ namespace SemanticKernelPluginDemov4.Services
     public class OpenAIChatcompletionService : IOpenAIChatcompletionService
     {
         private readonly Kernel _kernel;
-        private readonly DbContextOptions<NorthwindContext> _dbContextOptions;
 
         private IChatCompletionService _chatCompletionService;
 
-        public OpenAIChatcompletionService(Kernel kernel, DbContextOptions<NorthwindContext> dbContextOptions, NorthwindSemanticKernelPlugin northwindSemanticKernelPlugin)
+        public OpenAIChatcompletionService(Kernel kernel)
         {
             _kernel = kernel;
-            _dbContextOptions = dbContextOptions;
             _chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
-
-            _kernel.ImportPluginFromObject(northwindSemanticKernelPlugin);
         }
 
         public async IAsyncEnumerable<string?> RunQuery(string question)
@@ -35,7 +29,6 @@ namespace SemanticKernelPluginDemov4.Services
             {
                 yield return chatUpdate.Content;
             }
-
         }
 
         private OpenAIPromptExecutionSettings? CreateOpenAIExecutionSettings()
@@ -45,5 +38,6 @@ namespace SemanticKernelPluginDemov4.Services
                 ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
             };
         }
+
     }
 }

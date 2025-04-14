@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.SemanticKernel;
 using SemanticKernelPluginDemov4.Models;
@@ -32,9 +30,15 @@ namespace SemanticKernelPluginDemov4
                 kernelBuilder.AddOpenAIChatCompletion(modelId: builder.Configuration.GetSection("OpenAI").GetValue<string>("ModelId")!,
                     apiKey: builder.Configuration.GetSection("OpenAI").GetValue<string>("ApiKey")!);
 
-                return kernelBuilder.Build();
+                var kernel = kernelBuilder.Build();
+
+                var dbContextFactory = sp.GetRequiredService<IDbContextFactory<NorthwindContext>>();
+                var northwindSemanticKernelPlugin = new NorthwindSemanticKernelPlugin(dbContextFactory);
+                kernel.ImportPluginFromObject(northwindSemanticKernelPlugin);
+
+                return kernel;
             });
-     
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

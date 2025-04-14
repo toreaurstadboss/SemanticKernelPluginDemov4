@@ -1,7 +1,7 @@
 ﻿namespace SemanticKernelPluginDemov4.Pages
 {
-   
-    public partial class Counter
+
+    public partial class Index
     {
 
         public string Question { get; set; } = string.Empty;
@@ -17,12 +17,9 @@
 
                 Answer += chatUpdate;
                 StateHasChanged();
-            }   
-            
+            }
+
         }
-
-
-
 
     }
 

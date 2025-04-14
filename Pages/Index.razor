@@ -1,9 +1,62 @@
 ﻿@page "/"
+@using Microsoft.SemanticKernel
+@using SemanticKernelPluginDemov4.Services
 
-<PageTitle>Index</PageTitle>
+@inject IOpenAIChatcompletionService OpenAIChatcompletionService
 
-<h1>Hello, world!</h1>
+<PageTitle>Northwind</PageTitle>
 
-Welcome to your new app.
+<h1>Semantic Kernel - Plugin demo v4</h1>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div id="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card alert-success shadow-md">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        Adding plugins to Semantic Kernel AI models
+                    </div>
+                    <div class="card-text">This demo shows how you can provide additional data to AI models using plugins.</div>
+                    <div class="card-footer text-muted">Adding data access to AI driven processes such as a AI-powered sales bot using OpenAI Chat (the demo uses the AI model GPT-4o LLM).</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row mt-5">
+
+        <div class="col-md-4">
+            <label for="txtAreaQuestion" class="form-label fw-bold">Ask about Northwind sales</label><br />
+            <label for="txtAreaQuestion" class="text-muted">The AI powered sales bot will only answer about Northwind sales.</label>
+            <InputTextArea class="form-control mt-4" id="txtAreaQuestion" placeholder="Enter your question about Northwind sales" @bind-Value="Question" />
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4">
+            <button class="btn btn-outline-success" @onclick="RunQuery">Submit</button>
+        </div>
+
+    </div>
+
+
+</div>
+
+<pre class="mt-4">
+    @Answer
+</pre>
+
+<style>
+
+    pre {
+        background-color: black;
+        color: greenyellow;
+        font-size: 14pt;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+</style>
