@@ -24,11 +24,15 @@
             </div>
         </div>
 
-    </div>
-    <div class="row mt-5">
+        <div class="col-md-6">
+            <img src="images/northwindlogo.png" title="Northwind logo" />
+        </div>
 
-        <div class="col-md-4">
-            <label for="txtAreaQuestion" class="form-label fw-bold">Ask about Northwind sales</label><br />
+    </div>
+    <div class="row mt-1">
+
+        <div class="col-md-8">
+            <label for="txtAreaQuestion" class="form-label fw-bold">Ask about Northwind sales. For example: 'List suppliers'. 'List total sales in July 1996'.</label><br />
             <label for="txtAreaQuestion" class="text-muted">The AI powered sales bot will only answer about Northwind sales.</label>
             <InputTextArea class="form-control mt-4" id="txtAreaQuestion" placeholder="Enter your question about Northwind sales" @bind-Value="Question" />
         </div>

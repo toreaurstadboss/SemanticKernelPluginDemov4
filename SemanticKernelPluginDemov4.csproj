@@ -12,4 +12,10 @@
 		<PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.46.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Content Update="wwwroot\images\northwindlogo.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
 </Project>
